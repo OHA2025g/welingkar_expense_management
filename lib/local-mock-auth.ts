@@ -4,6 +4,7 @@ import {
   findLocalUserByKey,
   type LocalUser,
 } from "./local-users";
+import { isTrustedBrowserOrigin, publicOrigin } from "./request-origin";
 
 const LOCAL_COOKIE = "__sites_local_auth";
 const AUTH_PATHS = new Set([
@@ -95,11 +96,7 @@ function handleAuthAction(
   signIn: boolean,
   signOut: boolean,
 ): Response | Promise<Response> {
-  const origin = request.headers.get("origin");
-  if (
-    (origin && origin !== url.origin) ||
-    request.headers.get("sec-fetch-site") === "cross-site"
-  ) {
+  if (!isTrustedBrowserOrigin(request)) {
     return new Response(null, {
       status: 403,
       headers: { "Cache-Control": "private, no-store" },
@@ -128,6 +125,7 @@ function handleAuthAction(
       "",
       true,
       request.method === "POST" ? 303 : 302,
+      request,
     );
   }
 
@@ -198,7 +196,7 @@ async function authenticateAndRedirect(
     return loginFailure(returnTo, "Invalid email or password.");
   }
 
-  return redirectWithCookie(returnTo, user.key, false, 303);
+  return redirectWithCookie(returnTo, user.key, false, 303, request);
 }
 
 function redirectWithCookie(
@@ -206,7 +204,12 @@ function redirectWithCookie(
   userKey: string,
   clear: boolean,
   status: number,
+  request?: Request,
 ): Response {
+  const secure =
+    request != null && publicOrigin(request).startsWith("https://")
+      ? "; Secure"
+      : "";
   return new Response(null, {
     status,
     headers: {
@@ -214,7 +217,7 @@ function redirectWithCookie(
       Location: location,
       "Set-Cookie": `${LOCAL_COOKIE}=${encodeURIComponent(userKey)}; Path=/; ${
         clear ? "Max-Age=0; " : ""
-      }HttpOnly; SameSite=Lax`,
+      }HttpOnly; SameSite=Lax${secure}`,
     },
   });
 }
