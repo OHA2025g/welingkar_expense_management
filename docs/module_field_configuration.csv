@@ -1,0 +1,41 @@
+module,field,enabled,mandatory,show_in_pdf,default_checked,enable_control_disabled,evidence_id
+Trips,Business Purpose,Yes,No,Yes,,No,OBS-126
+Trips,Billable,No,No,No,,No,OBS-126
+Trips,Customer,No,No,No,,No,OBS-126
+Trips,Project,No,No,No,,No,OBS-126
+Trips,Meal Preference,Yes,No,Yes,,No,OBS-126
+Trips,Seat Preference,Yes,No,Yes,,No,OBS-126
+Trips,Budget amount,No,No,No,,No,OBS-126
+Trips,Other Travelers,No,No,No,,No,OBS-126
+Trips,Personal,No,No,No,,No,OBS-126
+Trips,Is visa required?,Yes,No,Yes,,No,OBS-126
+Trips,Is International,Yes,Not applicable - default-value column,Yes,No,No,OBS-126
+Trips,Flight Reservations,Yes,No,Yes,,No,OBS-126
+Trips,Hotel Reservations,Yes,No,Yes,,No,OBS-126
+Trips,Car Rentals,Yes,No,Yes,,No,OBS-126
+Trips,Bus,Yes,No,Yes,,No,OBS-126
+Trips,Train,Yes,No,Yes,,No,OBS-126
+Trips,Ferry,No,No,No,,No,OBS-126
+Expenses,Tax,Yes,No,Yes,,No,OBS-131
+Expenses,Reference#,Yes,No,Yes,,No,OBS-131
+Expenses,Billable,No,No,No,,No,OBS-131
+Expenses,Customer,No,No,No,,No,OBS-131
+Expenses,Description,Yes,No,Yes,,No,OBS-131
+Expenses,Project,No,No,No,,No,OBS-131
+Expenses,Payment Mode,No,No,No,,No,OBS-131
+Expenses,Expense Location,No,No,No,,No,OBS-131
+Expenses,Paid Through,Yes,No,Yes,,No,OBS-131
+Expenses,Attendees,No,No,No,,No,OBS-131
+Expenses,Tax Inclusive,Yes,Not applicable - default-value column,Yes,No,No,OBS-131
+Expenses,Personal,No,No,No,,No,OBS-131
+Reports,Customer,No,No,No,,No,OBS-134
+Reports,Business Purpose,Yes,No,Yes,,No,OBS-134
+Reports,Project,No,No,No,,No,OBS-134
+Reports,Duration,Yes,No,Yes,,No,OBS-134
+Reports,Trip,Yes,No,Yes,,No,OBS-134
+Advances,Reference#,Yes,No,Yes,,No,OBS-148
+Advances,Notes,Yes,No,Yes,,No,OBS-148
+Advances,Paid Through,Yes,No,Yes,,No,OBS-148
+Advances,Customer,No,No,No,,No,OBS-148
+Advances,Project,No,No,No,,No,OBS-148
+Advances,Apply to Trip,Yes,No,Yes,,Yes,OBS-148

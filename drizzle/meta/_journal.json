@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1792908475913,
+      "tag": "0000_purple_eddie_brock",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1792908784091,
+      "tag": "0001_dapper_sinister_six",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1792908801328,
+      "tag": "0002_financial-integrity",
+      "breakpoints": true
+    }
+  ]
+}

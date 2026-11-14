@@ -1,0 +1,1276 @@
+{
+  "reports": [
+    {
+      "report_name": "Expense Details",
+      "route": "/reports/booksapp/expense/details",
+      "default_columns": "Report; User Name; Receipt; Payment Mode; Category; Expense Date; Expense Amount; Expense Amount (FCY)",
+      "filters_and_controls": "View the reports sidebar; Export; Expense Date :; This Month; Run Report; Show dropdown menu; Table View; Chart View; None; Report; User Name; Category; Expense Date; Expense Amount",
+      "evidence_id": "OBS-019",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Unsubmitted Expenses",
+      "route": "/reports/booksapp/expense/details",
+      "default_columns": "Report; User Name; Receipt; Payment Mode; Category; Expense Date; Expense Amount; Expense Amount (FCY)",
+      "filters_and_controls": "View the reports sidebar; Export; Expense Date :; This Month; Run Report; Show dropdown menu; None; Report; User Name; Category; Expense Date; Expense Amount",
+      "evidence_id": "OBS-021",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Expenses by Category",
+      "route": "/reports/booksapp/expense/category",
+      "default_columns": "Category; Expense Amount; Expense Count; Expense Amount without Tax",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; Category; Expense Amount; Expense Count",
+      "evidence_id": "OBS-022",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Expenses by User",
+      "route": "/reports/booksapp/expense/user",
+      "default_columns": "User Name; Expense Amount; Expense Count; Expense Amount without Tax",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; User Name; Expense Amount; Expense Count",
+      "evidence_id": "OBS-023",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Mileage Expenses by User",
+      "route": "/reports/booksapp/expense/mileage",
+      "default_columns": "User Name; Expense Amount; Unit; Expense Count; Expense Amount without Tax",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; User Name; Expense Amount; Expense Count",
+      "evidence_id": "OBS-024",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Expense Policy Violations by User",
+      "route": "/reports/booksapp/expense/policyviolationsbyuser",
+      "default_columns": "User Name; Expense Amount; Violated Expense Amount; Expense Count; Violated Expense Count",
+      "filters_and_controls": "View the reports sidebar; Export; Expense Date :; This Month; Run Report; Show dropdown menu; User Name; Expense Amount; Violated Expense Amount; Expense Count; Violated Expense Count",
+      "evidence_id": "OBS-025",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Expenses by Department",
+      "route": "/reports/booksapp/expense/department",
+      "default_columns": "Department; Expense Amount; Expense Count; Expense Amount without Tax",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; Department; Expense Amount; Expense Count",
+      "evidence_id": "OBS-026",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Expenses by Attendee",
+      "route": "/reports/booksapp/expense/attendee",
+      "default_columns": "Attendee; Expense Amount; Expense Count; Expense Amount without Tax; Attendee Share; Attendee Share with Tax",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; Attendee; Expense Amount; Expense Count",
+      "evidence_id": "OBS-027",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Expenses by Customer",
+      "route": "/reports/booksapp/expense/customer",
+      "default_columns": "Customer; Expense Amount; Expense Count; Expense Amount without Tax",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; Customer; Expense Amount; Expense Count",
+      "evidence_id": "OBS-028",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Expenses by Project",
+      "route": "/reports/booksapp/expense/project",
+      "default_columns": "Project; Customer; Expense Amount without Tax; Expense Count; Expense Amount",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; Project; Customer; Expense Count",
+      "evidence_id": "OBS-029",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Expense by Merchant",
+      "route": "/reports/booksapp/expense/merchant",
+      "default_columns": "Merchant; Expense Amount; Expense Count; Expense Amount without Tax",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; Merchant; Expense Amount; Expense Count",
+      "evidence_id": "OBS-030",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Expenses by Currency",
+      "route": "/reports/booksapp/expense/currency",
+      "default_columns": "Currency; Expense Amount; Expense Amount (FCY); Expense Amount without Tax (FCY); Expense Count; Expense Amount without Tax",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; Currency; Expense Amount; Expense Amount without Tax (FCY); Expense Count",
+      "evidence_id": "OBS-031",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Expense Reports Details",
+      "route": "/reports/booksapp/expensereportdetails",
+      "default_columns": "Report#; Report Name; Status; Start Date; End Date; Submitted By; Approver; Amount; Policy Violated",
+      "filters_and_controls": "View the reports sidebar; Export; Start Date :; This Month; Run Report; Show dropdown menu; None; Report#; Report Name; Status; Start Date; End Date; Submitted By; Amount; Policy Violated",
+      "evidence_id": "OBS-033",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Policy Violations",
+      "route": "/reports/booksapp/expensereportpolicyviolation",
+      "default_columns": "Report#; Report Name; Submitted By; Approver; Policy Violations Count",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; Report#; Report Name",
+      "evidence_id": "OBS-034",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Report Approval Time",
+      "route": "/reports/booksapp/expensereporttimetakenforapproval",
+      "default_columns": "Approver; Approver Email ID; Average Time Taken; < 1 Days; 1-15 Days; 16-30 Days; 31-45 Days; > 45 Days",
+      "filters_and_controls": "View the reports sidebar; Approved Date :; This Month; Run Report; 4 X 15 Days; Approver; 1-15 Days; 16-30 Days; 31-45 Days; > 45 Days",
+      "evidence_id": "OBS-035",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Reimbursement Details",
+      "route": "/reports/booksapp/reimbursementdetails",
+      "default_columns": "Report Name; Reimbursed By; Reimbursed On; Paid Through; Reference#; Notes; Reimbursement Amount",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; Table View; Chart View; None; Report Name; Reimbursed By; Reimbursed On; Paid Through; Reference#; Reimbursement Amount",
+      "evidence_id": "OBS-037",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Reimbursements by User",
+      "route": "/reports/booksapp/reimbursementbyuser",
+      "default_columns": "User Name; Reimbursement Count; Reimbursement Amount",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; User Name; Reimbursement Count; Reimbursement Amount",
+      "evidence_id": "OBS-038",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Awaiting Reimbursements by User",
+      "route": "/reports/booksapp/pendingreimbursementbyuser",
+      "default_columns": "User Name; Reimbursable Amount; Advance Amount; Refund Amount; Amount To Be Reimbursed",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; User Name",
+      "evidence_id": "OBS-039",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Liability Summary",
+      "route": "/reports/booksapp/liabilitysummary",
+      "default_columns": "User Name; Employee Liability; Company Liability",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; User Name; Employee Liability; Company Liability",
+      "evidence_id": "OBS-040",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Advances by User",
+      "route": "/reports/booksapp/advancebyuser",
+      "default_columns": "User Name; Advance Count; Advance Amount",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; User Name; Advance Count; Advance Amount",
+      "evidence_id": "OBS-041",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Trip Details",
+      "route": "/reports/booksapp/tripdetails",
+      "default_columns": "Trip Number; Start Date; End Date; Trip Status; Destination Country; Destination City; Budget amount; Submitted By; Approver; Travel Type; Submitted Date",
+      "filters_and_controls": "View the reports sidebar; Export; Start Date :; This Month; Run Report; Show dropdown menu; None; Trip Number; Start Date; End Date; Trip Status; Submitted By; Submitted Date",
+      "evidence_id": "OBS-042",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Trip Approval Time",
+      "route": "/reports/booksapp/triptimetakenforapproval",
+      "default_columns": "Approver; Approver Email ID; Average Time Taken; < 1 Days; 1-15 Days; 16-30 Days; 31-45 Days; > 45 Days",
+      "filters_and_controls": "View the reports sidebar; This Month; Run Report; 4 X 15 Days; Approver; 1-15 Days; 16-30 Days; 31-45 Days; > 45 Days",
+      "evidence_id": "OBS-043",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Trip Stage Summary",
+      "route": "/reports/booksapp/tripsummary",
+      "default_columns": "",
+      "filters_and_controls": "View the reports sidebar; This Month; Run Report",
+      "evidence_id": "OBS-044",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Trip Expense Summary",
+      "route": "/reports/booksapp/tripexpensesummary",
+      "default_columns": "Trip Number; Trip Name; Booking Expenses; Per diem Allowance; Trip Expenses; Total Expense Amount",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; Table View; Chart View; None; Trip Number; Booking Expenses; Per diem Allowance; Trip Expenses; Total Expense Amount",
+      "evidence_id": "OBS-045",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Trip Summary by Report Status",
+      "route": "/reports/booksapp/tripsummarybyreport",
+      "default_columns": "",
+      "filters_and_controls": "View the reports sidebar; This Month; Run Report",
+      "evidence_id": "OBS-046",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Tax Summary",
+      "route": "/reports/booksapp/expensetaxsummary",
+      "default_columns": "Tax Name; Tax Percentage (%); Expense Amount; Tax Amount",
+      "filters_and_controls": "View the reports sidebar; Export; Expense Date :; This Month; Run Report; Show dropdown menu; Tax Name; Tax Percentage (%); Expense Amount; Tax Amount",
+      "evidence_id": "OBS-047",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Corporate Card Reconciliation",
+      "route": "/reports/corporatecards",
+      "default_columns": "Card/Account Name; Number of Cards; Total Amount; Unsubmitted Amount; Unapproved Expenses; Missing Reciepts; Excluded Amount",
+      "filters_and_controls": "Search reports; Corporate Cards; Export; Close; This Month; More Filters; Run Report",
+      "evidence_id": "OBS-048",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Corporate Card Transaction Details",
+      "route": "/reports/booksapp/corporatecardtransactions",
+      "default_columns": "Card Name; User Name; Date; Merchant Name; Status; Amount",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; Card Name; User Name; Date; Merchant Name; Amount",
+      "evidence_id": "OBS-051",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Budget Vs Actuals",
+      "route": "/reports/budgetvsactuals",
+      "default_columns": "",
+      "filters_and_controls": "Search reports; Budgets; Close",
+      "evidence_id": "OBS-052",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Activity Logs",
+      "route": "/reports/booksapp/expenseactivitylogs",
+      "default_columns": "Date; Activity Details; Description",
+      "filters_and_controls": "View the reports sidebar; Export; This Month; Run Report; Show dropdown menu; Add Filters; Date; Activity Details",
+      "evidence_id": "OBS-054",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    },
+    {
+      "report_name": "Active Users",
+      "route": "/reports/booksapp/activeusers",
+      "default_columns": "User Name; Email Address; Expense report count; AutoScan count; Mileage Expense count",
+      "filters_and_controls": "View the reports sidebar; Custom; Run Report; User Name",
+      "evidence_id": "OBS-055",
+      "data_state": "Empty / no matching rows in the inspected organization"
+    }
+  ],
+  "integrations": [
+    {
+      "provider": "Zoho Books",
+      "category": "Accounting and ERP",
+      "source": "OBS-161",
+      "visible_data_contract": "Approved expenses and settlement information; shared master data",
+      "access_state": "Introduction; Try Now offered",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "QuickBooks Online",
+      "category": "Accounting and ERP",
+      "source": "OBS-162",
+      "visible_data_contract": "Customers, accounts and employees inbound; approved expenses outbound",
+      "access_state": "OAuth entry offered; not followed",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "QuickBooks Desktop",
+      "category": "Accounting and ERP",
+      "source": "OBS-163",
+      "visible_data_contract": "Master imports and export-ready reports",
+      "access_state": "Request Access gate",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Xero",
+      "category": "Accounting and ERP",
+      "source": "OBS-164",
+      "visible_data_contract": "Customers, expense accounts and tracking categories inbound; expenses outbound",
+      "access_state": "OAuth entry offered; not followed",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Sage Accounting",
+      "category": "Accounting and ERP",
+      "source": "OBS-165",
+      "visible_data_contract": "Customers/accounts inbound and approved expenses outbound",
+      "access_state": "Request Access gate",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Microsoft Dynamics",
+      "category": "Accounting and ERP",
+      "source": "OBS-166",
+      "visible_data_contract": "Expense export and account/cost-center mapping",
+      "access_state": "Support-assisted setup",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Oracle",
+      "category": "Accounting and ERP",
+      "source": "OBS-167",
+      "visible_data_contract": "Expense export and account/cost-center mapping",
+      "access_state": "Support-assisted setup",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "SAP",
+      "category": "Accounting and ERP",
+      "source": "OBS-168",
+      "visible_data_contract": "Expense export and account/cost-center mapping",
+      "access_state": "Support-assisted setup",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Zoho People",
+      "category": "HR and projects",
+      "source": "OBS-169",
+      "visible_data_contract": "Employees, departments, clients, projects and reporting hierarchy",
+      "access_state": "Try Now offered",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Zoho Payroll",
+      "category": "Payroll",
+      "source": "OBS-170",
+      "visible_data_contract": "User/employee synchronization and reimbursement in payrun",
+      "access_state": "Introduction inspected",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Zoho Projects",
+      "category": "HR and projects",
+      "source": "OBS-171",
+      "visible_data_contract": "Projects plus associated primary clients and users",
+      "access_state": "Connect Now gate",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Uber",
+      "category": "Ridesharing",
+      "source": "OBS-172",
+      "visible_data_contract": "Business ride receipts to automatic expenses",
+      "access_state": "Consent checkbox and disabled Enable",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Bolt Business",
+      "category": "Ridesharing",
+      "source": "OBS-173",
+      "visible_data_contract": "Work-profile ride receipts to expenses",
+      "access_state": "User-level external setup instructions",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Zoho Cliq",
+      "category": "Collaboration",
+      "source": "OBS-174",
+      "visible_data_contract": "Report approval and rejection notifications",
+      "access_state": "Connect Now gate",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Slack",
+      "category": "Collaboration",
+      "source": "OBS-175",
+      "visible_data_contract": "Report approval and rejection notifications",
+      "access_state": "OAuth entry offered; not followed",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Fintua Recover",
+      "category": "VAT reclaim",
+      "source": "OBS-176",
+      "visible_data_contract": "Reimbursed expense/receipt export for reclaim",
+      "access_state": "Enable Integration gate",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "WAY2VAT",
+      "category": "VAT reclaim",
+      "source": "OBS-177",
+      "visible_data_contract": "Reimbursed expense/receipt analysis for reclaim",
+      "access_state": "Introduction inspected",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Zoho Analytics",
+      "category": "Analytics",
+      "source": "OBS-178",
+      "visible_data_contract": "Selected-module reporting and dashboards",
+      "access_state": "Configure gate",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Zoho CRM",
+      "category": "CRM",
+      "source": "OBS-179",
+      "visible_data_contract": "Accounts/contacts to customers and user import",
+      "access_state": "Organization selection prerequisite",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Microsoft 365",
+      "category": "Identity and contacts",
+      "source": "OBS-180",
+      "visible_data_contract": "Contacts/employees to customers/users",
+      "access_state": "Enable Integration gate",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Google Workspace",
+      "category": "Identity",
+      "source": "OBS-181",
+      "visible_data_contract": "User import",
+      "access_state": "Enable Integration gate",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "ScanSnap",
+      "category": "Receipt capture",
+      "source": "OBS-182",
+      "visible_data_contract": "Scanner receipts through email capture",
+      "access_state": "External scanner setup instructions",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Lune CO2 Calculator",
+      "category": "Sustainability",
+      "source": "OBS-183",
+      "visible_data_contract": "Trip/expense/report emissions widget and logs",
+      "access_state": "Marketplace Install gate",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "HSBC",
+      "category": "Online reimbursements",
+      "source": "OBS-185",
+      "visible_data_contract": "Approved report to bank reimbursement",
+      "access_state": "Enable Integration gate",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "SBI",
+      "category": "Online reimbursements",
+      "source": "OBS-186",
+      "visible_data_contract": "Approved report to bank reimbursement",
+      "access_state": "Enable Integration gate",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    },
+    {
+      "provider": "Axis Bank",
+      "category": "Online reimbursements",
+      "source": "OBS-187",
+      "visible_data_contract": "Approved report to bank reimbursement",
+      "access_state": "Enable Integration gate",
+      "tested_live": "No",
+      "reconstruction": "Provider adapter plus credential vault, mappings, sync/payment jobs and reconciliation"
+    }
+  ],
+  "permissions": [
+    {
+      "permission": "Create and Submit Trips",
+      "Approver": "Allowed",
+      "Submitter": "Allowed",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "View Trip",
+      "Approver": "My Trips",
+      "Submitter": "My Trips",
+      "Admin": "All Company Trips",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Approve Trip",
+      "Approver": "Direct Trips",
+      "Submitter": "None",
+      "Admin": "All Company Trips",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Close Trip",
+      "Approver": "Allowed",
+      "Submitter": "Allowed",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Archive Trip",
+      "Approver": "Allowed",
+      "Submitter": "Allowed",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Reopen Trip",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Restrict users from editing approved trips.",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Not selected",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Add and modify my Travel Documents",
+      "Approver": "Allowed",
+      "Submitter": "Allowed",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "All Company Travel Documents",
+      "Approver": "No Access",
+      "Submitter": "No Access",
+      "Admin": "Add and Modify Access",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Create and Submit Expense Reports",
+      "Approver": "Allowed",
+      "Submitter": "Allowed",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "View Report",
+      "Approver": "My Reports",
+      "Submitter": "My Reports",
+      "Admin": "All Company Reports",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Approve Report",
+      "Approver": "Direct Reports",
+      "Submitter": "None",
+      "Admin": "All Company Reports",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Approve reports with policy violations",
+      "Approver": "Allowed",
+      "Submitter": "Not selected (disabled)",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Modify Expenses in Submitted Reports",
+      "Approver": "Allowed",
+      "Submitter": "Not selected (disabled)",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Reimburse Report",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Share Report",
+      "Approver": "Allowed",
+      "Submitter": "Allowed",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Archive Report",
+      "Approver": "Allowed",
+      "Submitter": "Allowed",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Edit reports and their expenses after they are marked as exported",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Prevent expense creation using a Parent category",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Not selected",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Prevent overwriting exchange rate in Expense Creation",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Not selected",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "View Corporate Card",
+      "Approver": "My Corporate Cards",
+      "Submitter": "My Corporate Cards",
+      "Admin": "All Corporate Cards",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Connect Corporate Card For",
+      "Approver": "Myself",
+      "Submitter": "Myself",
+      "Admin": "All Users",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Record Advance For",
+      "Approver": "Myself",
+      "Submitter": "Myself",
+      "Admin": "All Users",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "View Policy Advances",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Approve Employee Advance",
+      "Approver": "Allowed",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Edit advances after they are marked as exported",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "View Shared Budgets",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "View General Budgets",
+      "Approver": "Not selected (disabled)",
+      "Submitter": "Not selected (disabled)",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Add and Modify General Budgets",
+      "Approver": "Not selected (disabled)",
+      "Submitter": "Not selected (disabled)",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "View User Budgets",
+      "Approver": "None",
+      "Submitter": "None",
+      "Admin": "All Users",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Add and Modify User Budgets",
+      "Approver": "None",
+      "Submitter": "None",
+      "Admin": "All Users",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Allow users to add additional approvers",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Allow delegate to submit records",
+      "Approver": "Allowed",
+      "Submitter": "Allowed",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Allow delegate to approve records",
+      "Approver": "Allowed",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Settings",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Add Users",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Preferences",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Custom View",
+      "Approver": "Allowed",
+      "Submitter": "Allowed",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Expense Categories",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Customers",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Projects",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Merchants",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Currencies",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Taxes",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Payment Mode",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Manage Integrations",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Billing",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    },
+    {
+      "permission": "Provide access to protected data",
+      "Approver": "Not selected",
+      "Submitter": "Not selected",
+      "Admin": "Allowed",
+      "evidence_ids": "OBS-070; OBS-071; OBS-072",
+      "interpretation": "Displayed role configuration; enforcement under separate user sessions not tested"
+    }
+  ],
+  "moduleFields": [
+    {
+      "module": "Trips",
+      "field": "Business Purpose",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Trips",
+      "field": "Billable",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Trips",
+      "field": "Customer",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Trips",
+      "field": "Project",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Trips",
+      "field": "Meal Preference",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Trips",
+      "field": "Seat Preference",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Trips",
+      "field": "Budget amount",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Trips",
+      "field": "Other Travelers",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Trips",
+      "field": "Personal",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Trips",
+      "field": "Is visa required?",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Trips",
+      "field": "Is International",
+      "enabled": "Yes",
+      "mandatory": "Not applicable - default-value column",
+      "show_in_pdf": "Yes",
+      "default_checked": "No",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Trips",
+      "field": "Flight Reservations",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Trips",
+      "field": "Hotel Reservations",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Trips",
+      "field": "Car Rentals",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Trips",
+      "field": "Bus",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Trips",
+      "field": "Train",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Trips",
+      "field": "Ferry",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-126"
+    },
+    {
+      "module": "Expenses",
+      "field": "Tax",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-131"
+    },
+    {
+      "module": "Expenses",
+      "field": "Reference#",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-131"
+    },
+    {
+      "module": "Expenses",
+      "field": "Billable",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-131"
+    },
+    {
+      "module": "Expenses",
+      "field": "Customer",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-131"
+    },
+    {
+      "module": "Expenses",
+      "field": "Description",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-131"
+    },
+    {
+      "module": "Expenses",
+      "field": "Project",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-131"
+    },
+    {
+      "module": "Expenses",
+      "field": "Payment Mode",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-131"
+    },
+    {
+      "module": "Expenses",
+      "field": "Expense Location",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-131"
+    },
+    {
+      "module": "Expenses",
+      "field": "Paid Through",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-131"
+    },
+    {
+      "module": "Expenses",
+      "field": "Attendees",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-131"
+    },
+    {
+      "module": "Expenses",
+      "field": "Tax Inclusive",
+      "enabled": "Yes",
+      "mandatory": "Not applicable - default-value column",
+      "show_in_pdf": "Yes",
+      "default_checked": "No",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-131"
+    },
+    {
+      "module": "Expenses",
+      "field": "Personal",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-131"
+    },
+    {
+      "module": "Reports",
+      "field": "Customer",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-134"
+    },
+    {
+      "module": "Reports",
+      "field": "Business Purpose",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-134"
+    },
+    {
+      "module": "Reports",
+      "field": "Project",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-134"
+    },
+    {
+      "module": "Reports",
+      "field": "Duration",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-134"
+    },
+    {
+      "module": "Reports",
+      "field": "Trip",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-134"
+    },
+    {
+      "module": "Advances",
+      "field": "Reference#",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-148"
+    },
+    {
+      "module": "Advances",
+      "field": "Notes",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-148"
+    },
+    {
+      "module": "Advances",
+      "field": "Paid Through",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-148"
+    },
+    {
+      "module": "Advances",
+      "field": "Customer",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-148"
+    },
+    {
+      "module": "Advances",
+      "field": "Project",
+      "enabled": "No",
+      "mandatory": "No",
+      "show_in_pdf": "No",
+      "default_checked": "",
+      "enable_control_disabled": "No",
+      "evidence_id": "OBS-148"
+    },
+    {
+      "module": "Advances",
+      "field": "Apply to Trip",
+      "enabled": "Yes",
+      "mandatory": "No",
+      "show_in_pdf": "Yes",
+      "default_checked": "",
+      "enable_control_disabled": "Yes",
+      "evidence_id": "OBS-148"
+    }
+  ]
+}

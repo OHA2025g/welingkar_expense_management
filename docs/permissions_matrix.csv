@@ -1,0 +1,49 @@
+permission,Approver,Submitter,Admin,evidence_ids,interpretation
+Create and Submit Trips,Allowed,Allowed,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+View Trip,My Trips,My Trips,All Company Trips,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Approve Trip,Direct Trips,None,All Company Trips,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Close Trip,Allowed,Allowed,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Archive Trip,Allowed,Allowed,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Reopen Trip,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Restrict users from editing approved trips.,Not selected,Not selected,Not selected,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Add and modify my Travel Documents,Allowed,Allowed,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+All Company Travel Documents,No Access,No Access,Add and Modify Access,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Create and Submit Expense Reports,Allowed,Allowed,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+View Report,My Reports,My Reports,All Company Reports,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Approve Report,Direct Reports,None,All Company Reports,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Approve reports with policy violations,Allowed,Not selected (disabled),Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Modify Expenses in Submitted Reports,Allowed,Not selected (disabled),Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Reimburse Report,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Share Report,Allowed,Allowed,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Archive Report,Allowed,Allowed,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Edit reports and their expenses after they are marked as exported,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Prevent expense creation using a Parent category,Not selected,Not selected,Not selected,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Prevent overwriting exchange rate in Expense Creation,Not selected,Not selected,Not selected,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+View Corporate Card,My Corporate Cards,My Corporate Cards,All Corporate Cards,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Connect Corporate Card For,Myself,Myself,All Users,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Record Advance For,Myself,Myself,All Users,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+View Policy Advances,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Approve Employee Advance,Allowed,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Edit advances after they are marked as exported,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+View Shared Budgets,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+View General Budgets,Not selected (disabled),Not selected (disabled),Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Add and Modify General Budgets,Not selected (disabled),Not selected (disabled),Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+View User Budgets,None,None,All Users,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Add and Modify User Budgets,None,None,All Users,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Allow users to add additional approvers,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Allow delegate to submit records,Allowed,Allowed,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Allow delegate to approve records,Allowed,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Settings,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Add Users,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Preferences,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Custom View,Allowed,Allowed,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Expense Categories,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Customers,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Projects,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Merchants,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Currencies,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Taxes,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Payment Mode,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Manage Integrations,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Billing,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested
+Provide access to protected data,Not selected,Not selected,Allowed,OBS-070; OBS-071; OBS-072,Displayed role configuration; enforcement under separate user sessions not tested

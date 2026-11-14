@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: expenseflow:local
+    container_name: expenseflow
+    ports:
+      - "9121:8787"
+    restart: unless-stopped
