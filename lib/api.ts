@@ -13,7 +13,40 @@ import {allDefinitions,preferenceDefinitions,configurationDefinitions} from './c
 import source from './source-catalog.json';
 const headers={'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'same-origin','Vary':'oai-authenticated-user-id, X-Workspace-Id'};
 const json=(value:any,status=200,extra:any={})=>Response.json(value,{status,headers:{...headers,...extra}});
-function csrf(req:Request){const origin=req.headers.get('origin');if(origin){const u=new URL(origin);const actual=new URL(req.url);const allowed=u.origin===actual.origin||u.origin==='https://expenseflow-workspace.singh-aghoreshwar.chatgpt.site'||import.meta.env.DEV&&(u.hostname==='terminal.local'||u.hostname.endsWith('.terminal.local'));requireValue(allowed,'This request originated outside the application.','origin_denied',403);}requireValue(req.headers.get('sec-fetch-site')!=='cross-site','Cross-site requests are not allowed.','origin_denied',403);}
+function requestHosts(req:Request){
+ const url=new URL(req.url);
+ const hosts=new Set<string>();
+ for(const value of [req.headers.get('x-forwarded-host'),req.headers.get('host'),url.host]){
+  if(!value)continue;
+  for(const part of value.split(',')){
+   const host=part.trim().toLowerCase();
+   if(host)hosts.add(host);
+  }
+ }
+ return hosts;
+}
+function publicOrigin(req:Request){
+ const url=new URL(req.url);
+ const host=(req.headers.get('x-forwarded-host')||req.headers.get('host')||url.host).split(',')[0].trim();
+ const local=/^(localhost|127\.0\.0\.1|0\.0\.0\.0|\[::1\])(?::\d+)?$/i.test(host);
+ const proto=(req.headers.get('x-forwarded-proto')||(!local?'https':null)||url.protocol.replace(':','')||'https').split(',')[0].trim();
+ return `${proto}://${host}`;
+}
+function csrf(req:Request){
+ const origin=req.headers.get('origin');
+ if(origin){
+  const u=new URL(origin);
+  const actual=new URL(req.url);
+  const allowed=
+   u.origin===actual.origin||
+   u.origin===publicOrigin(req)||
+   requestHosts(req).has(u.host.toLowerCase())||
+   u.origin==='https://expenseflow-workspace.singh-aghoreshwar.chatgpt.site'||
+   import.meta.env.DEV&&(u.hostname==='terminal.local'||u.hostname.endsWith('.terminal.local'));
+  requireValue(allowed,'This request originated outside the application.','origin_denied',403);
+ }
+ requireValue(req.headers.get('sec-fetch-site')!=='cross-site','Cross-site requests are not allowed.','origin_denied',403);
+}
 function expectedVersion(req:Request,input:any){const raw=req.headers.get('if-match')?.replaceAll('"','')??input.version;const n=Number(raw);requireValue(Number.isInteger(n)&&n>=0,'Refresh this record before saving.','version_required',428);return n;}
 const getBody=async(req:Request)=>{requireValue(Number(req.headers.get('content-length')||0)<=12*1024*1024,'The request is too large.','payload_too_large',413);if(req.headers.get('content-type')?.includes('multipart/form-data')){const data=await req.formData();const file=data.get('file');requireValue(file instanceof File,'Select a file.');return{file};}const body=await req.text();requireValue(body.length<=2*1024*1024,'The request is too large.','payload_too_large',413);try{return body?JSON.parse(body):{};}catch{throw new AppError('invalid_json','The request must contain valid JSON.',400);}};
 export async function handle(req:Request){const requestId=uid();try{
